@@ -23,26 +23,42 @@
         background-color: #f7f7f2;
         text-transform: uppercase;
         font-size: 16px;
+        overflow-wrap: break-word;
+      }
+      main {
+        padding: 2rem 1rem;
       }
       h1 {
-        overflow-wrap: break-word;
-        margin: 2rem 0 1rem;
-        font-size: 6rem;
+        font-size: 8rem;
+        line-height: 8rem;
+        margin: 0 0 1rem;
       }
       ul {
         list-style: none;
         padding: 0;
-        font-size: 3rem;
+        margin: 0;
+        font-size: 4rem;
+      }
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 4rem;
+          line-height: 4rem;
+        }
+        ul {
+          font-size: 2rem;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Rob Sanchez</h1>
-    <ul class="links">
-      <li><a href="https://github.com/rsanchez">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/rob-sanchez-3b470717">Linkedin</a></li>
-      <li><a href="https://twitter.com/_rsan">Twitter</a></li>
-      <li><a href="https://mastodon.social/@robsanchez">Mastodon</a></li>
-    </ul>
+    <main>
+      <h1>Rob Sanchez</h1>
+      <ul class="links">
+        <li><a href="https://github.com/rsanchez">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/rob-sanchez-3b470717">Linkedin</a></li>
+        <li><a href="https://twitter.com/_rsan">Twitter</a></li>
+        <li><a href="https://mastodon.social/@robsanchez">Mastodon</a></li>
+      </ul>
+    </main>
   </body>
 </html>
